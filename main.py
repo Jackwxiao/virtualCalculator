@@ -68,7 +68,7 @@ delayCounter = 0
 while True:
     # 从摄像头获取图像
     success, img = cap.read()
-    img = cv2.flip(img, 1)   # 水平翻转，因为屏幕相对于我们使相反的
+    img = cv2.flip(img, 1)   # 水平翻转，因为屏幕相对于我们是相反的
 
     # 检测手
     hands, img = detector.findHands(img, flipType=False)
